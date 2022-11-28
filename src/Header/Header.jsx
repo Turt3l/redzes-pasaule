@@ -1,7 +1,5 @@
 import styled from "styled-components";
-
 const HeaderContainer = styled.div `
-
     width: 100%;
     align-items: center;
     display: flex;

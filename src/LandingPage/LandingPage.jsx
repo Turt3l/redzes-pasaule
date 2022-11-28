@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import image from "../media/images/ffce8945da70b024c6045f90b88b0670.gif";
+import image from "../media/images/2825710.gif";
 const LandingContainer = styled.div `
     overflow: hidden;
     font-family: 'Scada';

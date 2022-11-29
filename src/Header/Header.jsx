@@ -3,8 +3,7 @@ const HeaderContainer = styled.div `
     width: 100%;
     align-items: center;
     display: flex;
-    background-color: white;
-    position:sticky;
+
     top:0;
     left:0;
     height: 60px;
@@ -38,7 +37,7 @@ function Header() {
         <HeaderContainer>
             <div className="headerWrap">
                 <div className="logoContainer">
-                    <div className="logo">a</div>
+                    <div className="logo"></div>
                 </div>
                 <div className="linkContainer">
                     <div className="links">
@@ -48,7 +47,7 @@ function Header() {
                     </div>
                 </div>
                 <div className="burgerMenuContainer">
-                    <div className="burgerMenu">a</div>
+                    <div className="burgerMenu"></div>
                 </div>
             </div>
         </HeaderContainer>

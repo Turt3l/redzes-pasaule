@@ -3,13 +3,11 @@ const FooterContainer = styled.div `
     font-family: 'Scada';
     font-style: normal;
     font-weight: 700;
-    background: #DEDBD2;
     overflow: hidden;
     width: 100%;
     height: 170px;
-
     background: #B0C4B1;
-
+    position: relative;
     .footer_main_text {
         font-size: 26px;
         line-height: 45px;

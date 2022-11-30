@@ -49,7 +49,7 @@ function FindUs() {
         <FindusContainer>
             <div className="find_wrapper">
                 <div className="findus_header">
-                    <p>Kā sazināties ar mums?</p>
+                    <p>Kā sazianāties ar mums?</p>
                 </div>
                 <div className="findus_text"><p>Ar mums var sazināties izmantojot e-pastu, vai zvanot par mūsu tālruni.</p></div>
                 <div className="socialContainer">

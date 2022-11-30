@@ -23,6 +23,8 @@ const BuiContainer = styled.div `
     }
     .col {
         margin-bottom: 20px;
+
+        cursor: pointer;
     }
 `
 function Bui() {

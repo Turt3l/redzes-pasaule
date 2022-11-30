@@ -19,9 +19,9 @@ const FindusContainer = styled.div `
         justify-content: center;
     }
     .findus_text p {
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 60px;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 50px;
         text-align: center;
         width: 50%;
         color: #4A5759;

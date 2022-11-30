@@ -24,6 +24,8 @@ const BuiContainer = styled.div `
     }
     .col {
         margin-bottom: 20px;
+
+        cursor: pointer;
     }
     .descriptionTextContainer {
         width: 100%;

@@ -12,6 +12,7 @@ const BuiContainer = styled.div `
         padding-right: 50px;
     }
     h2 {
+        color: #4A5759;
         text-align: center;
         width: 100%;
     }
@@ -21,12 +22,8 @@ const BuiContainer = styled.div `
         flex-wrap: wrap;
     }
     .col {
-        border-top: 1px solid #4A5759;
-        border-bottom: 1px solid #4A5759;
         margin-bottom: 20px;
     }
-
-
 `
 function Bui() {
 

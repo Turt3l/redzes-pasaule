@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import logo from "../media/images/Redzes_pasaule_logo.png";
 const HeaderContainer = styled.div `
     width: 100%;
     align-items: center;
@@ -11,7 +12,9 @@ const HeaderContainer = styled.div `
     .headerWrap {
         text-align: center;
         width: 100%;
+        align-items: center;
         display: flex;
+    }
     }
     .logoContainer {
         width: 10%;
@@ -30,6 +33,10 @@ const HeaderContainer = styled.div `
     .burgerMenuContainer {
         width: 10%;
     }
+    .logo img {
+        max-width: 100px;
+        max-height: 100px;
+    }
 `
 
 function Header() {
@@ -37,7 +44,9 @@ function Header() {
         <HeaderContainer>
             <div className="headerWrap">
                 <div className="logoContainer">
-                    <div className="logo"></div>
+                    <div className="logo">
+                        <img src={logo}/>
+                    </div>
                 </div>
                 <div className="linkContainer">
                     <div className="links">

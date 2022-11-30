@@ -4,14 +4,16 @@ import Footer from "./footer/footer";
 import Header from "./Header/Header";
 import Bui from "./BUI/Bui";
 import About from "./about/About";
+import AboutUs from "./aboutus/aboutus";
 function App() {
   return (
     <div className="App">
       <Header />
       <LandingPage/>
+      <AboutUs/>
       <About/>
-      <FindUS/>
       <Bui/>
+      <FindUS/>
       <Footer/>
     </div>
 

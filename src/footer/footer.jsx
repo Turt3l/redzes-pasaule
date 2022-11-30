@@ -6,32 +6,46 @@ const FooterContainer = styled.div `
     overflow: hidden;
     width: 100%;
     height: 170px;
-    background: #B0C4B1;
-    position: relative;
+    background: #1B1C23;
+
+    display: flex; 
+    flex-direction: column;
+
+    .footer_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 100%;
+    }
+
+    .footer_designedby {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .footer_main_text {
-        font-size: 26px;
-        line-height: 45px;
-        text-align: center;
-        
+        height: auto;
     }
 
     .footer_main_text p {
-        color: #4A5759;
-
-        position: relative;
-        text-align: center; 
+        font-size: 3vh;
+        color: #929292;
     }
 
     .designedby {
-        font-size: 20px;
-        line-height: 25px;
-        
+        height: auto;
+
+        margin-top: auto;
     }
 
     .designedby p {
-        text-align: center;
+        font-size: 1.6vh;
+        opacity: 0.7;
         color: #929292;
     }
+    
 `
 
 function Footer() {
@@ -39,9 +53,13 @@ function Footer() {
         <FooterContainer>
             <div className="footer_wrapper">
                 <div className="footer_main_text"><p>2022 © Redzes pasaule</p></div>
+            </div>
+            <div className="footer_designedby">
                 <div className="designedby"><p>Designed by NytroByte</p></div>
             </div>
         </FooterContainer>
+
+        
     )
 }
 export default Footer;

@@ -12,6 +12,7 @@ const BuiContainer = styled.div `
         padding-right: 50px;
     }
     h2 {
+        margin-bottom: 0;
         color: #4A5759;
         text-align: center;
         width: 100%;
@@ -24,6 +25,15 @@ const BuiContainer = styled.div `
     .col {
         margin-bottom: 20px;
     }
+    .descriptionTextContainer {
+        width: 100%;
+        padding-bottom: 50px;
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center;
+        color: #4A5759;
+        font-family: 'Scada';
+    }
 `
 function Bui() {
 
@@ -31,6 +41,9 @@ function Bui() {
         <BuiContainer>
             <div className="buiWrap">
                 <h2>Biežāk uzdotie jautājumi</h2>
+                <div className="descriptionTextContainer">
+                    <p>Šeit ir atbildes uz uzdotākājiem jautājumiem</p>
+                </div>
                 <div className="row">
                     <div className="col">
                         <Accordion content="loti mega kaka" header="kakucis loti mizligs vai mazins?" />

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { useState } from "react";
 const AccardeonContainer = styled.div `
+cursor: pointer;
     .title {
         color: #4A5759;
     }

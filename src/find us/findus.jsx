@@ -1,10 +1,8 @@
 import styled from "styled-components";
 const FindusContainer = styled.div `
     font-family: 'Scada';
-    font-style: normal;
-    font-weight: 700;
     width: 100%;
-    height: 100vh;
+    padding-bottom: 200px;
     display: flex; 
     justify-content: center;
     .findus_header {
@@ -14,9 +12,16 @@ const FindusContainer = styled.div `
         text-align: center;
         color: #4A5759;
     }
-    .findus_text {
-        display: flex;
-        justify-content: center;
+    .findus_header p {
+        margin-bottom: 0;
+    }
+    .findus_text h3 {
+        padding-bottom: 50px;
+        font-size: 30px;
+        text-align: center;
+        color: #4A5759;
+        font-family: 'Scada';
+        font-weight: 500;
     }
     .findus_text p {
         font-weight: 700;
@@ -55,6 +60,9 @@ const FindusContainer = styled.div `
 
         padding-left: 7vh;
     }
+    .descriptionTextContainer {
+
+    }
     
 `
 
@@ -66,7 +74,7 @@ function FindUs() {
                 <div className="findus_header">
                     <p>Kā sazināties ar mums?</p>
                 </div>
-                <div className="findus_text"><p>Ar mums var sazināties izmantojot e-pastu, vai zvanot par mūsu tālruni.</p></div>
+                <div className="findus_text"><h3>Ar mums var sazināties izmantojot e-pastu, vai zvanot par mūsu tālruni.</h3></div>
                 <div className="socialContainer">
                     <div className="email">
                         <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">

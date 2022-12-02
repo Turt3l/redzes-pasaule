@@ -1,11 +1,20 @@
 import styled from "styled-components";
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
 const FindusContainer = styled.div `
     font-family: 'Scada';
     width: 100%;
     padding-bottom: 200px;
     display: flex; 
     justify-content: center;
+    .find_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 200px 0 200px;
+        justify-content: center;
+    }
     .findus_header {
+        width: 100%;
         font-weight: 700;
         font-size: 96px;
         line-height: 119px;
@@ -32,6 +41,7 @@ const FindusContainer = styled.div `
         color: #4A5759;
     }
     .socialContainer {
+        width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -60,21 +70,65 @@ const FindusContainer = styled.div `
 
         padding-left: 7vh;
     }
-    .descriptionTextContainer {
-
+    .formContainer {
+        display: flex;
+        width: 50%;
     }
-    
+    .messageBox {
+        width: 100%;
+        height: 300px;
+        resize: none;
+    }
+    input {
+        border: 1px solid gray;
+        border-radius: 25px;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    textarea {
+        border-radius: 25px;
+        padding: 10px;
+    }
+    .submitButton {
+        border-radius: 25px;
+        background-color: #4A5759;
+        font-size: 20px;
+        color: white;
+        width: 200px;
+        height: 50px
+    }
+    input:focus {
+        box-shadow: 1px 2px 2px gray;
+        outline: none;
+    }
+    label {
+        font-weight: 700;
+        font-family: 'Scada';
+    }
 `
 
 
 function FindUs() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+    emailjs.sendForm('service_nueqemd', 'template_8aodxas', form.current, 'AY1AFJjV24lSP6o0r')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    };
     return (
         <FindusContainer>
             <div className="find_wrapper">
                 <div className="findus_header">
                     <p>Kā sazināties ar mums?</p>
                 </div>
-                <div className="findus_text"><h3>Ar mums var sazināties izmantojot e-pastu, vai zvanot par mūsu tālruni.</h3></div>
+                <div className="findus_text"><h3>Ar mums var sazināties izmantojot e-pastu, zvanot par mūsu tālruni, vai uzrakstot jautājumu.</h3></div>
                 <div className="socialContainer">
                     <div className="email">
                         <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">
@@ -89,6 +143,17 @@ function FindUs() {
                         </svg>
                         <p>+371 22222222</p>
                     </div>
+                </div>
+                <div className="formContainer">
+                    <form ref={form} onSubmit={sendEmail}>
+                        <label>Vārds, uzvārds</label>
+                        <input type="text" name="user_name" className="userNameContainer" />
+                        <label>Ē-pasts</label>
+                        <input type="email" name="user_email" className="emailContainer"/>
+                        <label>Jūsu jautājums</label>
+                        <textarea name="message" className="messageBox"/>
+                        <input type="submit" value="Sūtīt" className="submitButton" />
+                    </form>
                 </div>
             </div>
         </FindusContainer>

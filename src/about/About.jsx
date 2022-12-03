@@ -10,6 +10,7 @@ margin: 0 200px 0 200px;
 
     }
     .headerContainer h3{
+        margin-bottom: 0;
         font-weight: 700;
         font-size: 8vh;
         line-height: 119px;
@@ -31,6 +32,13 @@ margin: 0 200px 0 200px;
     .pointText {
         padding-top: 20px;
     }
+    .descriptionTextContainer {
+        padding-bottom: 50px;
+        font-size: 30px;
+        text-align: center;
+        color: #4A5759;
+        font-family: 'Scada';
+    }
 
 `
 function About() {
@@ -40,6 +48,9 @@ function About() {
                 <div className="aboutRow">
                     <div className="headerContainer">
                         <h3>Ko mēs piedāvājam?</h3>
+                        <div className="descriptionTextContainer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aperiam magni voluptatum sed alias optio! Incidunt, repellendus, doloremque nesciunt ab laudantium sed commodi voluptas nostrum asperiores molestiae sapiente, vitae nam.</p>
+                        </div>
                     </div>
                     <div className="aboutPoints">
                         <div className="point">

@@ -9,11 +9,16 @@ const Aboutuscontainer = styled.div `
 
     .aboutus_container {
         width: 100%;
+        padding: 0 200px 0 200px;
     }
 
     .header_text {
         font-weight: 700;
+<<<<<<< HEAD
         font-size: 8vh;
+=======
+        font-size: 96px;
+>>>>>>> 3a4a4d1724d819ca75626561289ea5b2a43ce8b6
         line-height: 119px;
         color: #4A5759;
 
@@ -26,11 +31,7 @@ const Aboutuscontainer = styled.div `
         font-size: 32px;
         line-height: 40px;
         color: #000000;
-
         width: 30%;
-
-        padding-left: 136px;
-        padding-top: 197px;
     }
 
 `

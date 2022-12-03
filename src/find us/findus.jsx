@@ -91,6 +91,8 @@ const FindusContainer = styled.div `
     .messageBox {
         width: 1715px;
         height: 451px;
+
+        resize: none;
     }
     input {
         border: 1px solid gray;

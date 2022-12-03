@@ -4,6 +4,7 @@ import { useRef } from "react";
 const FindusContainer = styled.div `
     font-family: 'Scada';
     width: 100%;
+    height: auto;
     padding-bottom: 200px;
     display: flex; 
     justify-content: center;
@@ -21,15 +22,13 @@ const FindusContainer = styled.div `
         text-align: center;
         color: #4A5759;
     }
-<<<<<<< HEAD
     .findus_header h2 {
         font-weight: 700;
-        font-size: 8vh;
+        font-size: 96px;
+        line-height: 119px;
+
+        color: #4A5759;
     }
-    .findus_text {
-        display: flex;
-        justify-content: center;
-=======
     .findus_header p {
         margin-bottom: 0;
     }
@@ -40,7 +39,6 @@ const FindusContainer = styled.div `
         color: #4A5759;
         font-family: 'Scada';
         font-weight: 500;
->>>>>>> 3a4a4d1724d819ca75626561289ea5b2a43ce8b6
     }
     .findus_text p {
         font-weight: 400;
@@ -81,24 +79,29 @@ const FindusContainer = styled.div `
         padding-left: 7vh;
     }
     .formContainer {
+        margin-top: 25px;
+        padding: 10px;
+        left: 260px;
+        top: 610px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px 9px rgba(0, 0, 0, 0.25);
         display: flex;
-        width: 50%;
     }
     .messageBox {
-        width: 100%;
-        height: 300px;
-        resize: none;
+        width: 1715px;
+        height: 451px;
     }
     input {
         border: 1px solid gray;
-        border-radius: 25px;
-        width: 100%;
-        padding: 10px;
+        padding: 9px;
         margin-bottom: 10px;
+        margin-left: 5px;
     }
     textarea {
-        border-radius: 25px;
         padding: 10px;
+
+        text-align: center;
     }
     .submitButton {
         border-radius: 25px;
@@ -115,6 +118,13 @@ const FindusContainer = styled.div `
     label {
         font-weight: 700;
         font-family: 'Scada';
+
+        font-size: 24px;
+        line-height: 30px;
+        color: #4A5759;
+
+        padding: auto;
+        margin-left: 15px;
     }
 `
 
@@ -158,11 +168,11 @@ function FindUs() {
                     <form ref={form} onSubmit={sendEmail}>
                         <label>Vārds, uzvārds</label>
                         <input type="text" name="user_name" className="userNameContainer" />
-                        <label>Ē-pasts</label>
+                        <label>E-pasts</label>
                         <input type="email" name="user_email" className="emailContainer"/>
-                        <label>Jūsu jautājums</label>
+                        <label>Vēstījums</label>
                         <textarea name="message" className="messageBox"/>
-                        <input type="submit" value="Sūtīt" className="submitButton" />
+                        <input type="submit" value="Sūtīt ziņojumu" className="submitButton" />
                     </form>
                 </div>
             </div>

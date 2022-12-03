@@ -14,11 +14,7 @@ const Aboutuscontainer = styled.div `
 
     .header_text {
         font-weight: 700;
-<<<<<<< HEAD
         font-size: 8vh;
-=======
-        font-size: 96px;
->>>>>>> 3a4a4d1724d819ca75626561289ea5b2a43ce8b6
         line-height: 119px;
         color: #4A5759;
 

@@ -12,8 +12,8 @@ const Aboutuscontainer = styled.div `
     }
 
     .header_text {
-        font-weight: 400;
-        font-size: 96px;
+        font-weight: 700;
+        font-size: 8vh;
         line-height: 119px;
         color: #4A5759;
 

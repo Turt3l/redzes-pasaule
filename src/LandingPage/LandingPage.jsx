@@ -25,7 +25,7 @@ const LandingContainer = styled.div `
         line-height: 159px;
     }
     .landingDescription h2 {
-        font-size: 36px;
+        font-size: 3vh;
         line-height: 45px;
         margin: 0px;
     }

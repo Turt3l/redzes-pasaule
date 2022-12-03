@@ -11,7 +11,7 @@ margin: 0 200px 0 200px;
     }
     .headerContainer h3{
         font-weight: 700;
-        font-size: 96px;
+        font-size: 8vh;
         line-height: 119px;
         text-align: center;
         color: #4A5759;

@@ -14,6 +14,10 @@ const FindusContainer = styled.div `
         text-align: center;
         color: #4A5759;
     }
+    .findus_header h2 {
+        font-weight: 700;
+        font-size: 8vh;
+    }
     .findus_text {
         display: flex;
         justify-content: center;
@@ -64,7 +68,7 @@ function FindUs() {
         <FindusContainer>
             <div className="find_wrapper">
                 <div className="findus_header">
-                    <p>Kā sazināties ar mums?</p>
+                    <h2>Kā sazināties ar mums?</h2>
                 </div>
                 <div className="findus_text"><p>Ar mums var sazināties izmantojot e-pastu, vai zvanot par mūsu tālruni.</p></div>
                 <div className="socialContainer">

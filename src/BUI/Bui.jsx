@@ -21,6 +21,11 @@ const BuiContainer = styled.div `
         display: flex;
         flex-wrap: wrap;
     }
+
+    .buiwrap h2 {
+        font-weight: 700;
+        font-size: 8vh;
+    }
     .col {
         margin-bottom: 20px;
 

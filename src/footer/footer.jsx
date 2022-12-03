@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import picture from "../media/images/nytrobyte_logo.png"
 const FooterContainer = styled.div `
     font-family: 'Scada';
     font-style: normal;
@@ -23,6 +24,8 @@ const FooterContainer = styled.div `
         display: flex;
         justify-content: center;
         align-items: center;
+
+        width: 100%;
     }
 
     .footer_main_text {
@@ -44,6 +47,19 @@ const FooterContainer = styled.div `
         font-size: 1.6vh;
         opacity: 0.7;
         color: #929292;
+
+        float: left;
+
+    }
+
+    #logonytrobyte {
+        width: 80px;
+        height: auto;
+
+        float: right;
+        transform: translateY(50%);
+
+        padding-left: 0.5vh;
     }
     
 `
@@ -55,7 +71,7 @@ function Footer() {
                 <div className="footer_main_text"><p>2022 © Redzes pasaule</p></div>
             </div>
             <div className="footer_designedby">
-                <div className="designedby"><p>Designed by NytroByte</p></div>
+                <div className="designedby"><p>Designed by </p><img id="logonytrobyte" src={picture}/></div>
             </div>
         </FooterContainer>
 

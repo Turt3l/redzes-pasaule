@@ -15,6 +15,7 @@ const FindusContainer = styled.div `
         justify-content: center;
     }
     .findus_header {
+        margin-bottom: 0;
         width: 100%;
         font-weight: 700;
         font-size: 96px;
@@ -79,31 +80,35 @@ const FindusContainer = styled.div `
         padding-left: 7vh;
     }
     .formContainer {
+        width: 50%;
         margin-top: 25px;
-        padding: 10px;
-        left: 260px;
-        top: 610px;
-
         background: #FFFFFF;
-        box-shadow: 0px 4px 4px 9px rgba(0, 0, 0, 0.25);
         display: flex;
     }
     .messageBox {
-        width: 1715px;
-        height: 451px;
-
+        width: calc(100% - 20px);
+        height: 300px;
         resize: none;
     }
     input {
+        font-family: 'Scada';
+        font-size: 20px;
+        font-weight: 500;
+        width: calc(100% - 20px);
         border: 1px solid gray;
         padding: 9px;
         margin-bottom: 10px;
-        margin-left: 5px;
+        border-radius: 25px;
+        padding: 10px;
+        transition: box-shadow 0.3s;
     }
     textarea {
+        border-radius: 25px;
+        font-family: 'Scada';
+        font-size: 20px;
+        font-weight: 500;
         padding: 10px;
-
-        text-align: center;
+        transition: box-shadow 0.3s;
     }
     .submitButton {
         border-radius: 25px;
@@ -114,8 +119,12 @@ const FindusContainer = styled.div `
         height: 50px
     }
     input:focus {
-        box-shadow: 1px 2px 2px gray;
+        box-shadow: 0px 2px 15px #a8acb0;
         outline: none;
+    }
+    textarea:focus {
+        outline: none;
+        box-shadow: 0px 2px 15px #a8acb0;
     }
     label {
         font-weight: 700;
@@ -172,7 +181,7 @@ function FindUs() {
                         <input type="text" name="user_name" className="userNameContainer" />
                         <label>E-pasts</label>
                         <input type="email" name="user_email" className="emailContainer"/>
-                        <label>Vēstījums</label>
+                        <label>Jautājums</label>
                         <textarea name="message" className="messageBox"/>
                         <input type="submit" value="Sūtīt ziņojumu" className="submitButton" />
                     </form>

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 const AboutContainer = styled.div `
-
 margin: 0 200px 0 200px;
     .aboutPoints {
         position: relative;
@@ -17,6 +16,7 @@ margin: 0 200px 0 200px;
         text-align: center;
         color: #4A5759;
         font-family: 'Scada';
+        
     }
     .pointImage {
         display: inline-block;

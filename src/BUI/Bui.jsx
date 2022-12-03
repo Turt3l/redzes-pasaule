@@ -52,24 +52,24 @@ function Bui() {
                 </div>
                 <div className="row">
                     <div className="col">
-                        <Accordion content="loti mega kaka" header="kakucis loti mizligs vai mazins?" />
+                        <Accordion content="Lorem Ipsum is simply dummy text" header="jautājums 1" />
                     </div>
                     <div className="col">
-                        <Accordion content="kakucs" header="kakucis" />
+                        <Accordion content="Lorem Ipsum is simply dummy text" header="jautājums 2" />
                     </div>
                     <div className="col">
-                        <Accordion content="kakucs" header="kakucis" />
+                        <Accordion content="Lorem Ipsum is simply dummy text" header="jautājums 3" />
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                        <Accordion content="kakucs" header="kakucis" />
+                        <Accordion content="Lorem Ipsum is simply dummy text" header="jautājums 4" />
                     </div>
                     <div className="col">
-                        <Accordion content="kakucs" header="kakucis" />
+                        <Accordion content="Lorem Ipsum is simply dummy text" header="jautājums 5" />
                     </div>
                     <div className="col">
-                        <Accordion content="kakucs" header="kakucis" />
+                        <Accordion content="Lorem Ipsum is simply dummy text" header="jautājums 6`" />
                     </div>
                 </div>
             </div>

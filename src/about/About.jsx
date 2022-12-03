@@ -47,7 +47,7 @@ function About() {
             <div className="aboutWrap">
                 <div className="aboutRow">
                     <div className="headerContainer">
-                        <h3>Ko mēs piedāvājam?</h3>
+                        <h3>Noderīga informācija</h3>
                         <div className="descriptionTextContainer">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aperiam magni voluptatum sed alias optio! Incidunt, repellendus, doloremque nesciunt ab laudantium sed commodi voluptas nostrum asperiores molestiae sapiente, vitae nam.</p>
                         </div>

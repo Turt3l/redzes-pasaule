@@ -22,6 +22,8 @@ const HeaderContainer = styled.div `
     .links a {
         padding-left: 15px;
         padding-right: 15px;
+
+        cursor: pointer;
     }
     .linkContainer {
         width: 80%;

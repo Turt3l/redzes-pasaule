@@ -49,18 +49,8 @@ const FooterContainer = styled.div `
         color: #929292;
 
         float: left;
-
     }
 
-    #logonytrobyte {
-        width: 80px;
-        height: auto;
-
-        float: right;
-        transform: translateY(50%);
-
-        padding-left: 0.5vh;
-    }
     
 `
 
@@ -71,11 +61,9 @@ function Footer() {
                 <div className="footer_main_text"><p>2022 © Redzes pasaule</p></div>
             </div>
             <div className="footer_designedby">
-                <div className="designedby"><p>Designed by </p><img id="logonytrobyte" src={picture}/></div>
+                <div className="designedby"><p>Designed by NytroByte</p></div>
             </div>
-        </FooterContainer>
-
-        
+        </FooterContainer>        
     )
 }
 export default Footer;

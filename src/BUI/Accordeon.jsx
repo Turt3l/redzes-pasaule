@@ -2,10 +2,18 @@ import styled from "styled-components";
 import { useState } from "react";
 const AccardeonContainer = styled.div `
 cursor: pointer;
+transition: box-shadow 0.5s;
+border-radius: 25px;
+padding: 10px;
     .title {
         color: #4A5759;
     }
+
+    &:hover {
+        box-shadow: 0px 4px 35px #a8acb0;
+    }
     .content {
+        margin: 15px 0 0 20px;
         font-size: 36px;
         line-height: 45px;
         overflow: hidden;
@@ -14,7 +22,7 @@ cursor: pointer;
         padding: 0;
     }
     .content.open {
-        height: 100px;
+        height: 200px;
     }
 
 `

@@ -40,6 +40,7 @@ const BuiContainer = styled.div `
         color: #4A5759;
         font-family: 'Scada';
     }
+    
 `
 function Bui() {
 

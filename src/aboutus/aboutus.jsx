@@ -32,7 +32,6 @@ const Aboutuscontainer = styled.div `
 
 `
 
-
 function AboutUs() {
     return (
         <Aboutuscontainer>

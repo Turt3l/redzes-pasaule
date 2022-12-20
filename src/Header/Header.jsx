@@ -1,20 +1,28 @@
 import styled from "styled-components";
-import logo from "../media/images/Redzes_pasaule_logo.png";
+import React, {useState, useEffect} from "react";
+import useScrollListener from "./useScrollListener";
 const HeaderContainer = styled.div `
     width: 100%;
     align-items: center;
     display: flex;
-
-    top:0;
-    left:0;
     height: 60px;
-    z-index: 100000000000;
+    z-index: 1000000;
+    position: fixed;
+    top: 0;
+    line-height: 4em;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    transition: transform 150ms ease-in-out;
+    &.nav-bar--hidden {
+        transform: translateY(-100%);
+    }
     .headerWrap {
         text-align: center;
         width: 100%;
         align-items: center;
         display: flex;
-    }
     }
     .logoContainer {
         width: 10%;
@@ -22,7 +30,6 @@ const HeaderContainer = styled.div `
     .links a {
         padding-left: 15px;
         padding-right: 15px;
-
         cursor: pointer;
     }
     .linkContainer {
@@ -42,13 +49,23 @@ const HeaderContainer = styled.div `
 `
 
 function Header() {
+    const [navClassList, setNavClassList] = useState([]);
+    const scroll = useScrollListener();
+  
+    // update classList of nav on scroll
+    useEffect(() => {
+      const _classList = [];
+  
+      if (scroll.y > 150 && scroll.y - scroll.lastY > 0)
+        _classList.push("nav-bar--hidden");
+  
+      setNavClassList(_classList);
+    }, [scroll.y, scroll.lastY]);
     return (
-        <HeaderContainer>
+        <HeaderContainer className={navClassList.join(" ")}>
             <div className="headerWrap">
                 <div className="logoContainer">
-                    <div className="logo">
-                        <img src={logo}/>
-                    </div>
+                   
                 </div>
                 <div className="linkContainer">
                     <div className="links">
